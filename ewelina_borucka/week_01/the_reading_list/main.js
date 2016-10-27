@@ -22,28 +22,28 @@ var aBook1 = {
   title: "The Hobbit",
   author: "J.R.R. Tolkien",
   alreadyRead: false
-  }
+  };
 
 var aBook2 = {
   title: " The Girl with the Dragon Tattoo",
   author: "Stieg Larsson",
   alreadyRead: true
-  }
+  };
 
 var aBook3 = {
   title: "The Master and Margarita",
   author: " Mikhail Bulgakov",
   alreadyRead: true
-  }
+  };
 
 
 var allBooks = [ aBook1, aBook2, aBook3];
 
 for ( i = 0; i < allBooks.length; i += 1) {
-  if (allBooks[i]["alreadyRead"] === true) {
-    console.log("You already read " + allBooks[i]["title"] + " by " + allBooks[i]["author"]);
+  if (allBooks[i]("alreadyRead") === true) {
+    console.log("You already read " + allBooks[i]("title") + " by " + allBooks[i]("author"));
 
   } else {
-    console.log("You still need to read " + allBooks[i]["title"] + " by " + allBooks[i]["author"]);
+    console.log("You still need to read " + allBooks[i]("title") + " by " + allBooks[i]("author"));
   }
 }
