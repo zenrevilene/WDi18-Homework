@@ -64,13 +64,13 @@ function sumOfAll (xlist) {
 
 
 function validateCreditCard(input) {
-  var numList = [];  // convert string to a list
+  var numList = [];  // convert string to a list of numbers
 
   for (i = 0; i < input.length; i += 1) {
 
     var num = parseInt(input[i]); //<--- If the first character cannot be converted
                                   // to a number, parseInt() returns NaN.
-    if (Number.isInteger(num)) {
+    if (Number.isInteger(num)) {  // if is not returns false..
       numList.push(num);
     }
   }
