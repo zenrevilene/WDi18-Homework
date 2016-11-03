@@ -13,6 +13,9 @@
 // Bonus #4: Pretty much go nuts or whatever.
 
 
+///try stopping the walk and adding
+////more conditions to walk back
+
 var img = document.querySelector("img");
 console.log(img);
 
@@ -20,27 +23,48 @@ img.style.position = "absolute";
 img.style.left = "0px";
 
 
+// var catWalk = function() {
+//   var oldPos = parseInt(img.style.left);
+//
+//   if (parseInt(img.style.left) <= 1000) {
+//   var newPos = oldPos + 10;  //turns from string to integer to add up
+//   img.style.left = newPos + "px";
+//
+//     if (parseInt(img.style.left) === 1000) {
+//         window.clearInterval();
+//
+//         if (parseInt(img.style.left) > 0) {
+//         var newPos = oldPos - 10;  //turns from string to integer to add up
+//         img.style.left = newPos - "px";
+//       }
+//     }
+//   }
+// };
 
-//or try putting the conditionals on position
-// before the function to run one or the other
-//going back and forward
-
-
-
-var catWalk = function() {
+  var catWalk = function() {
   var oldPos = parseInt(img.style.left);
 
   if (parseInt(img.style.left) <= 1000) {
   var newPos = oldPos + 10;  //turns from string to integer to add up
   img.style.left = newPos + "px";
 
-  if (parseInt(img.style.left) === 1000) {
-    img.style.position = "absolute";
-    img.style.left = "0px";
+    var plusOrMinus = function() {
+      if (oldPos <= 1000) {
+        var newPos = oldPos + 10;  //turns from string to integer to add up
+        img.style.left = newPos + "px";
+        if (oldPos === 1000) {
+          window.clearinterval();
+          if (oldPos > 0) {
+            var newPos = oldPos - 10;  //turns from string to integer to add up
+            img.style.left = newPos + "px";
+          }
+        }
+      }
     }
   }
+
 };
 
-var stop = window.setInterval(catWalk, 50) //Use stop function to turn cat around
+var stop = window.setInterval(catWalk, 50); //Use stop function to turn cat around
 
 window.setInterval(catWalk, 50);
