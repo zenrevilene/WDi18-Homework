@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAokp0ffJCxc8klk68ElgsQAGPSgNVPsg&callback=initMap"
+    async defer></script>
+    <script src="js/location.js"></script>
+    <script src="js/people.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/passtime.js"></script>
+
+    <!-- <script src="js/passtime.js"></script> -->
+
+    <title>Current Space Status</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Something About Space Station</h1>
+
+
+        <div class="people">
+            <h3 class="peopleQuestion">How many people are currently in space?   </h2><button class="peopleButton peopleQuestion">Answer</button>
+            <div class="result">
+
+            </div>
+        </div>
+
+
+        <div class="passtime">
+            <h3>The Next Pass Time</h2>
+            <!-- <div class="lat">
+                <input type="text" placeholder="Latitude(-80..80	)">
+            </div>
+
+            <div class="long">
+                <input type="text" placeholder="Longitude(-180..180)">
+            </div>
+
+            <button class="passtimeButton">Submit</button> -->
+            <div class="result">
+                <p id="timeAndDuration"></p>
+            </div>
+        </div>
+
+
+        <div class="location">
+            <h3>International Space Staion current location</h2>
+            <!-- <button class="locationButton">Get it</button> -->
+            <div class="result">
+            </div>
+        </div>
+
+
+        <div id="map"></div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

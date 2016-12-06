@@ -1,0 +1,64 @@
+.{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("../background2.gif");
+  background-size: cover;
+  color: black;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+  padding: 0 0 30px 0;
+  margin: 30px auto;
+  width: 80%;
+  display:block;
+  background-color: rgba(255,255,255,0.5);
+}
+
+h1{
+  padding-top: 30px;
+  -webkit-animation: rainbow 1s infinite;
+}
+
+#map {
+  margin: 5px auto;
+  height: 60vh;
+  width: 80%;
+}
+
+.result img{
+  width: 100px;
+  height: 200px;
+}
+
+.peopleQuestion {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
